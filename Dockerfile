@@ -10,7 +10,7 @@ FROM instructure/ruby-passenger:$RUBY_PASSENGER
 ARG POSTGRES_VERSION=9.5
 
 ENV APP_HOME /usr/src/app/
-ENV RAILS_ENV "production"
+ENV RAILS_ENV "development"
 ENV NGINX_MAX_UPLOAD_SIZE 10g
 ENV YARN_VERSION 1.19.1-1
 
