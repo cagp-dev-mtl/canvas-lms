@@ -1,4 +1,4 @@
-Canvas LMS
+Canvas LMS pre-configured for 'development' mode
 ======
 
 Canvas is a modern, open-source [LMS](https://en.wikipedia.org/wiki/Learning_management_system)
@@ -7,6 +7,11 @@ AGPLv3 license for use by anyone interested in learning more about or using
 learning management systems.
 
 [Please see our main wiki page for more information](http://github.com/instructure/canvas-lms/wiki)
+
+Development settings
+=======
+
+This Canvas repo is configured to create a Canvas project for development.
 
 Installation
 =======
