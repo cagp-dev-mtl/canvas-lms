@@ -9,15 +9,31 @@ services:
       - redis
     environment:
       POSTGRES_PASSWORD: sekret
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
 
   jobs:
     <<: *WEB
     command: bundle exec script/delayed_job run
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
 
   postgres:
     build: ./docker-compose/postgres
     environment:
       POSTGRES_PASSWORD: sekret
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
 
   redis:
     image: redis:alpine
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
